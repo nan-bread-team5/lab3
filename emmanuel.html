@@ -7,11 +7,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	  
       <title> NaN Bread - Emmanuel</title> <!--Change this><!-->
 	  	<style>
+
+        body {
+        
+        }
 		 #float-parent-element { 
 		    width: 50%; 
 		} 
@@ -24,78 +29,158 @@
 		}
 			
 		img {
-			 border: 5px solid #EA4622;
+			 border: 5px solid green;
 		}
 			
-		#grad1 {
-			
-		  background-color: red; /* For browsers that do not support gradients */
-		  background-image: linear-gradient(to bottom right, lightgreen, yellow);
-		  background-size: auto;
+		#grad1 {		
+		  background-color: lightgreen; /* For browsers that do not support gradients */
+		  background-image: linear-gradient(to bottom right, yellow, #73AD21);
+		  background-size: 4000px 50px;
+          background-repeat: no-repeat;
 		}
+
+        div.aboutme { 
+            padding-left: 3%;
+            padding-bottom: 1%;
+            border-radius: 30px;
+            margin-top: 130px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            font-family: Verdana, sans-serif;
+            }
+
+        #picture { 
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 23px;
+            }
+
+
+
+        .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(119, 106, 106);
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+        }
+
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 24px;
+        margin-left: 50px;
+        }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 			
 			
 	</style>  
 	</head>
 	
 	
-  <body style="grad1">
-	  	  
-   <div class="wrapper">
-        <!--Top menu -->
-        <div class="sidebar">
-		<a href="index.html">Home</a> 
-           <!--profile image & text-->
-            <!--menu item-->
-        </div>
-    </div> 
-	  
-  <div>
-            <div class="well">
-               <center><h2>Team 5 Portfolio</h2></center>
+  <body style="background-color: rgb(120, 184, 206)">
+
+    <div>  
+
+     
+    <div>
+            <div class="well"> <div>
+                <div id="mySidenav" class="sidenav">
+                    
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                    <a href="index.html"> 
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                    </a>
+                    <a href="roy.html">Roy </a>
+                    <a href="ian.html">Ian</a>
+                    <a href="micah.html">Micah</a>
+              </div>
+
+              <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span>
+              
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "150px";
+              }
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+              }
+              </script>
+            </div> <center><h2>Team 5 Portfolio</h2> </center> </div>
+
+            
+        <br>
+        <br>
+        <div class="w3-container" >
+            
+            <br>
+            
+            <p class="font_8" >
+                <div >
+                    <div>
+                        <!--><div class="col-sm-1"> </div><!-->
+                        <div class="col-sm-1"> </div>  <h2> <strong>Emmanuel Akpan</strong> </h2> 
+                        <div class="row"> </div>
+                        <div class="col-sm-1"> </div>  <div class="col-sm-4"> <img src="IMG_0052.JPG" id="picture" alt="Emmanuel Akpan Headshot" width="384" height="512" /> </div>
+                    </div>
+                        <div class="col-sm-1"> </div>
+                    
+                    <div class="col-sm-4 aboutme" id="aboutme" style="background-color:lavenderblush;"><h3> I'm Emmanuel Akpan, a 4th year Computer Science and Engineering 
+                    student with a focus in Computer Breadth. 
+                        I was born and raised in St. Louis, Missouri and enjoy skateboarding, 
+                    playing drums, and playing video games in my free time. I also enjoy coding and working on
+                    computer projects.</h3> 
+                </div>
             </div>
 
-	  <br>
-	  <br>
-	  <br>
-	<div class="w3-container">
-		
-		<div class="col-sm-1"> </div> <center> <h2> <strong> Emmanuel Akpan</strong> </h2> </center>
-		<br>
-		
-		<p class="font_8">
-			<div>
-				<!--><div class="col-sm-1"> </div><!-->
-				<div class="col-sm-1"> </div>  <h2> <strong> Emmanuel Akpan</strong> </h2> 
-				<div class="row"> </div>
-				<div class="col-sm-4"> <img src="IMG_0052.JPG" alt="Emmanuel Akpan Headshot" width="384" height="512" /> </div>
-			</div>
-				<div class="col-sm-1"> </div>
-		
-	    	<div class="col-sm-4" style="background-color:lavenderblush;"><h3> I'm Emmanuel Akpan, a 4th year Computer Science and Engineering 
-			student with a focus in Computer Breadth. 
-			     I was born and raised in St. Louis, Missouri and enjoy skateboarding, 
-			playing drums, and playing video games in my free time. I also enjoy coding and working on
-			 computer projects.</h3> 
-		</div>
-		<!--></div>
-		
-		<div class="float-child-element w3-container"> <!-->
-		 </p>
-		<!--></div><!-->
-	
-	</div>
-	<div class="col-sm-2"> </div>
-	 <br>
-	 <br>
+            <!--> </div>
+            
+            <div class="float-child-element w3-container"> <!-->
+            </p>
+            <!--></div><!-->
+        
+        </div>
+        <div class="col-sm-2"> </div>
+        <br>
+        <br>
 
- 
-  </div>
-	  
-	<center> <div class="commentbox"></div>
-	<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-	<script>commentBox('5721461637513216-proj')</script>
-	</center>
-	    
+        
+
+    
+    </div>
+        
+        <center> <div class="commentbox"></div>
+        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+        <script>commentBox('5721461637513216-proj')</script>
+        </center>
+
+    </div> 
+         
   </body>
 </html>
